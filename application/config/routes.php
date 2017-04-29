@@ -56,3 +56,5 @@ $route['price-calculator'] = 'Price_calculator';
 $route['contact'] = 'Contact';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+//================================admin routes==================================
+$route['admin_login'] = 'admin/Admin_login';
