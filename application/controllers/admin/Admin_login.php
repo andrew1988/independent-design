@@ -6,7 +6,6 @@ class Admin_login extends CI_Controller {
 
 	public function index()
 	{
-		//die("ajunge aici");
 		$this->load->view('admin/login');
 	}
 }
