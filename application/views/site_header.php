@@ -53,7 +53,7 @@
                                     <label for="search" class="">Search Here...</label>
                                 </div>
                                 <button class="btn pink search-button waves-effect waves-light" type="submit"><i class="material-icons">&#xE8B6;</i></button>
-                                
+
                             </form>
                         </div>
                     </div><!-- /.search-wrapper -->
@@ -68,8 +68,8 @@
 
                         <!--mega menu start-->
                         <ul class="menuzord-menu pull-right">
-                                    
-                            <li  <?php if($page == 'home')  {echo 'class="active"';}  ?> ><a href="entry_page">Home</a></li> 
+
+                            <li  <?php if($page == 'home')  {echo 'class="active"';}  ?> ><a href="<?php echo base_url() ?>">Home</a></li> 
                             <li  <?php if($page == 'about-us')  {echo 'class="active"';}  ?> ><a href="about-us">About Us</a></li>
                             <li  <?php if($page == 'services')  {echo 'class="active"';}  ?> ><a href="services">Services</a></li>
                             <li  <?php if($page == 'price-calculator')  {echo 'class="active"';}  ?>><a href="price-calculator">Price Calculator</a></li>
