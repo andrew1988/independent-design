@@ -29,33 +29,33 @@ a {
 
 
 /*common form style*/
-input[type=text]:focus:not([readonly]), 
-input[type=password]:focus:not([readonly]), 
-input[type=email]:focus:not([readonly]), 
-input[type=url]:focus:not([readonly]), 
-input[type=time]:focus:not([readonly]), 
-input[type=date]:focus:not([readonly]), 
-input[type=datetime-local]:focus:not([readonly]), 
-input[type=tel]:focus:not([readonly]), 
-input[type=number]:focus:not([readonly]), 
-input[type=search]:focus:not([readonly]), 
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #71c44c;
-    box-shadow: 0 1px 0 0 #71c44c; 
+    box-shadow: 0 1px 0 0 #71c44c;
 }
 
-input[type=text]:focus:not([readonly]) + label, 
-input[type=password]:focus:not([readonly]) + label, 
-input[type=email]:focus:not([readonly]) + label, 
-input[type=url]:focus:not([readonly]) + label, 
-input[type=time]:focus:not([readonly]) + label, 
-input[type=date]:focus:not([readonly]) + label, 
-input[type=datetime-local]:focus:not([readonly]) + label, 
-input[type=tel]:focus:not([readonly]) + label, 
-input[type=number]:focus:not([readonly]) + label, 
-input[type=search]:focus:not([readonly]) + label, 
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #71c44c !important; 
+    color: #71c44c !important;
 }
 
 
@@ -65,7 +65,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .brand-icon,
 .flex-direction-nav a:before,
 .contact-info .mail a:hover,
-.portfolio-with-title .portfolio-title h2 a:hover, 
+.portfolio-with-title .portfolio-title h2 a:hover,
 .portfolio-with-title .portfolio-title p a:hover {
     color: #71c44c !important; /*theme primary color*/
 }
@@ -73,7 +73,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .brand-bg,
 .brand-hover:hover,
 .brand-bar,
-.brand-filter li:hover, 
+.brand-filter li:hover,
 .brand-filter li.active,
 .icon-hover-brand:hover .icon {
     background-color: #71c44c !important; /*theme primary background color*/
@@ -108,25 +108,25 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .menuzord-menu>li {
     margin-left: 15px;
 }
-.menuzord .menuzord-menu>li.active>a, 
-.menuzord .menuzord-menu>li.active>a>i, 
-.menuzord .menuzord-menu>li:hover>a, 
+.menuzord .menuzord-menu>li.active>a,
+.menuzord .menuzord-menu>li.active>a>i,
+.menuzord .menuzord-menu>li:hover>a,
 .menuzord .menuzord-menu>li:hover>a>i {
     color: #71c44c !important;
 }
 
-.nav-border-bottom .menuzord .menuzord-menu>li.active>a, 
+.nav-border-bottom .menuzord .menuzord-menu>li.active>a,
 .nav-border-bottom .menuzord .menuzord-menu>li:hover>a {
     border-bottom: 3px solid #71c44c;
 }
 
-.menuzord-menu ul.dropdown li.active>a, 
-.menuzord-menu ul.dropdown li:hover>a, 
+.menuzord-menu ul.dropdown li.active>a,
+.menuzord-menu ul.dropdown li:hover>a,
 .menuzord-menu>li>.megamenu .megamenu-row li:hover>a {
     color: #71c44c;
 }
 
-.menuzord-menu ul.dropdown li >a::before, 
+.menuzord-menu ul.dropdown li >a::before,
 .menuzord-menu>li>.megamenu .megamenu-row li >a::before {
     background-color: #71c44c;
 }
@@ -137,7 +137,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 Background banner images
 ------------------------------------------------------------*/
 .corporate-banner-1 {
-    background-image: url("../../img/corporate/corporate-banner-1.jpg");  
+    background-image: url("../../img/header.jpeg");  
 }
 
 
@@ -163,7 +163,7 @@ Background banner images
 
 
 /*tab*/
-.border-tab.primary-nav .nav-tabs>li>a, 
+.border-tab.primary-nav .nav-tabs>li>a,
 .border-tab.primary-nav .nav-tabs.nav-justified>li>a {
     border: 0;
     background: #fff;
@@ -181,8 +181,8 @@ Background banner images
     border: 1px solid #eee;
 }
 
-.vertical-tab .nav-tabs>li.active>a, 
-.vertical-tab .nav-tabs>li.active>a:focus, 
+.vertical-tab .nav-tabs>li.active>a,
+.vertical-tab .nav-tabs>li.active>a:focus,
 .vertical-tab .nav-tabs>li.active>a:hover {
     background-color: #71c44c;
     color: #fff;
@@ -207,7 +207,7 @@ Background banner images
 @media (max-width: 480px) {
     .consultancy-man img {
         max-width: 100%;
-    } 
+    }
 }
 
 
@@ -240,8 +240,8 @@ Background banner images
     text-align: center;
 }
 .chart canvas {
-    position:absolute; 
-    top:0; 
+    position:absolute;
+    top:0;
     left:0;
 }
 .percent {

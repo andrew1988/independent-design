@@ -67,7 +67,7 @@
                           </div>
                         </div><!-- /.featured-wrapper -->
                       </div><!-- /.featured-box  -->
-                  </div><!-- /.col-md-3 -->                  
+                  </div><!-- /.col-md-3 -->
 
                   <div class="col-md-3 col-sm-6">
                       <div class="featured-box green-bg text-center z-depth-1">
@@ -261,7 +261,7 @@
             <div class="container-fluid">
                 <div class="row equal-height-row">
                     <div class="col-md-4 consultancy-man equal-height-column">
-                      <img src="assets/img/corporate/consultancy-bg.png" alt="">
+                      <img src="assets/img/business-img.jpg" alt="">
                     </div>
                     <div class="col-md-8">
                       <div class=" equal-height-column valign-wrapper">
@@ -460,6 +460,3 @@
 
             </div><!-- /.container -->
         </section>
-
-
-       
