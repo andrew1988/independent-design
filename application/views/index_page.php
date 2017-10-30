@@ -4,8 +4,8 @@
               <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-6">
-                        <h1 class="intro-title text-capitalize">Corporate Agency</h1>
-                        <p class="lead">Specialising in customer experiences &amp; brand development, we combine craftsmanship.</p>
+                        <h1 class="intro-title text-capitalize">Web Design</h1>
+                        <p class="lead">Experti in design si redesign pagini web la standarde inalte de calitate.</p>
                         <a href="#" class="btn btn-lg waves-effect waves-light mt-20">Learn More</a>
                     </div><!-- row -->
                 </div><!-- row -->
