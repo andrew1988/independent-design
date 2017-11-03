@@ -6,7 +6,7 @@
                     <div class="col-md-6 col-md-offset-6">
                         <h1 class="intro-title text-capitalize">Web Design</h1>
                         <p class="lead">Experti in design si redesign pagini web la standarde inalte de calitate.</p>
-                        <a href="#" class="btn btn-lg waves-effect waves-light mt-20">Learn More</a>
+                        <a href="#" class="btn btn-lg waves-effect waves-light mt-20">Citeste restul</a>
                     </div><!-- row -->
                 </div><!-- row -->
               </div><!-- /.container -->
@@ -19,7 +19,7 @@
             <div class="container">
 
               <div class="text-center mb-80">
-                  <h2 class="section-title text-uppercase">What We Do</h2>
+                  <h2 class="section-title text-uppercase">Ce facem noi</h2>
                   <p class="section-sub">Quisque non erat mi. Etiam congue et augue sed tempus. Aenean sed ipsum luctus, scelerisque ipsum nec, iaculis justo. Sed at vestibulum purus, sit amet viverra diam nulla ac nisi rhoncus.</p>
               </div>
 
