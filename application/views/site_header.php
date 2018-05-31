@@ -61,7 +61,7 @@
                     <div id="matrox-menu" class="menuzord">
 
                         <!--logo start-->
-                        <a href="index.html" class="logo-brand">
+                        <a href="<?php echo base_url() ?>" class="logo-brand">
                             <img src="assets/img/corporate/logo.png" alt="" >
                         </a>
                         <!--logo end-->
