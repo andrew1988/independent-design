@@ -17,15 +17,12 @@
 
         <section class="section-padding">
           <div class="container">
-
-              <div class="row">
-                  <div class="col-md-4">
-                      <div class="featured-item hover-outline brand-hover radius-4">
-                          <div class="icon">
-                              <i class="material-icons colored brand-icon">&#xE0B7;</i>
-                          </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                <h2>What best describes you</h2>
+                <div class="">
                           <div class="desc">
-                              <h2>What best describes you</h2>
+                              
                               <p>
                                   <input type="radio" name="description" value="1"> I need to hire a web designer.<br>
                                   <input type="radio" name="description" value="2"> I am a website designer.<br>
@@ -33,16 +30,12 @@
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
-                  </div><!-- /.col-md-4 -->
-
-                 
-                  <div class="col-md-4">
-                      <div class="featured-item hover-outline brand-hover radius-4">
-                          <div class="icon">
-                              <i class="material-icons colored brand-icon">&#xE0B7;</i>
-                          </div>
+            </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                <h2>Basic Website Needs</h2>
+                <div class="">
                           <div class="desc">
-                              <h2>Basic Website Needs</h2>
                               <p>
                                   <input type="radio" name="description" value="1"> I need a brand new website I can edit myself.<br>
                                   <input type="radio" name="description" value="2"> I need a total revamp of my current website.<br>
@@ -50,15 +43,12 @@
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
-                  </div><!-- /.col-md-4 -->
-                  
-                  <div class="col-md-4">
-                      <div class="featured-item hover-outline brand-hover radius-4">
-                          <div class="icon">
-                              <i class="material-icons colored brand-icon">&#xE0B7;</i>
-                          </div>
+            </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                <h2>Graphics</h2>
+                <div class="">
                           <div class="desc">
-                              <h2>Graphics</h2>
                               <p>
                                   <input type="radio" name="description" value="1">I will supply web-ready images.<br>
                                   <input type="radio" name="description" value="2">I need custom graphics created for my website.<br>
@@ -67,15 +57,13 @@
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
-                  </div><!-- /.col-md-4 -->
-                  
-                  <div class="col-md-4">
-                      <div class="featured-item hover-outline brand-hover radius-4">
-                          <div class="icon">
-                              <i class="material-icons colored brand-icon">&#xE0B7;</i>
-                          </div>
+                
+            </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                <h2>Public Features</h2>
+                <div class="">
                           <div class="desc">
-                              <h2>Public Features</h2>
                               <p>
                                   <input type="checkbox" name="description" value="1">Member Registration.<br>
                                   <input type="checkbox" name="description" value="2">Responsive Design (Mobile Friendly).<br>
@@ -87,15 +75,13 @@
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
-                  </div><!-- /.col-md-4 -->
-                  
-                <div class="col-md-4">
-                  <div class="featured-item hover-outline brand-hover radius-4">
-                          <div class="icon">
-                              <i class="material-icons colored brand-icon">&#xE0B7;</i>
-                          </div>
+                
+            </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                <h2>Ecommerce</h2>
+                <div class="">
                           <div class="desc">
-                              <h2>Ecommerce</h2>
                               <p>
                                   <input type="checkbox" name="description" value="3">One page of products..<br>
                                   <input type="checkbox" name="description" value="3">Database shopping cart.<br>
@@ -104,15 +90,13 @@
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
-                  </div><!-- /.col-md-4 --> 
-                  
-                  <div class="col-md-4">
-                  <div class="featured-item hover-outline brand-hover radius-4">
-                          <div class="icon">
-                              <i class="material-icons colored brand-icon">&#xE0B7;</i>
-                          </div>
+                
+            </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                <h2>Admin Features</h2>
+                <div class="">
                           <div class="desc">
-                              <h2>Admin Features</h2>
                               <p>
                                   <input type="checkbox" name="description" value="3">Photo Gallery.<br>
                                   <input type="checkbox" name="description" value="3">Manage Users<br>
@@ -121,15 +105,13 @@
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
-                  </div><!-- /.col-md-4 --> 
-                  
-                <div class="col-md-4">
-                  <div class="featured-item hover-outline brand-hover radius-4">
-                          <div class="icon">
-                              <i class="material-icons colored brand-icon">&#xE0B7;</i>
-                          </div>
+                
+            </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                <h2>SEO</h2>
+                <div class="">
                           <div class="desc">
-                              <h2>SEO</h2>
                               <p>
                                   <input type="checkbox" name="description" value="3">MetaTag Keyword Optimization.<br>
                                   <input type="checkbox" name="description" value="3"Search Engine Submission<br>
@@ -140,15 +122,13 @@
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
-                  </div><!-- /.col-md-4 --> 
-                  
-                <div class="col-md-4">
-                  <div class="featured-item hover-outline brand-hover radius-4">
-                          <div class="icon">
-                              <i class="material-icons colored brand-icon">&#xE0B7;</i>
-                          </div>
+                
+            </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                <h2>SOCIAL</h2>
+                <div class="">
                           <div class="desc">
-                              <h2>SOCIAL</h2>
                               <p>
                                   <input type="checkbox" name="description" value="3">Twitter Integration.<br>
                                   <input type="checkbox" name="description" value="3">Facebook Page<br>
@@ -157,10 +137,8 @@
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
-                  </div><!-- /.col-md-4 --> 
-                  
-
-              </div><!-- /.row -->
+                
+            </div>  
           </div>
         </section>
 
