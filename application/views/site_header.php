@@ -73,7 +73,7 @@
                             <li  <?php if($page == 'about-us')  {echo 'class="active"';}  ?> ><a href="about-us">About Us</a></li>
                             <li  <?php if($page == 'services')  {echo 'class="active"';}  ?> ><a href="services">Services</a></li>
                             <li  <?php if($page == 'price-calculator')  {echo 'class="active"';}  ?>><a href="price-calculator">Price Calculator</a></li>
-                            <li ><a href="<?php echo base_url.\"/blog\" ?>">Price Calculator</a></li>
+                            <li ><a href="<?php echo base_url().'/blog' ?>">Blog</a></li>
                             <li  <?php if($page == 'contact')  {echo 'class="active"';}  ?>><a href="contact">Contact</a></li>
 
                         </ul>
