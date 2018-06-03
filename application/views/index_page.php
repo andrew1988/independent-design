@@ -330,7 +330,6 @@
 
         <section class="section-padding grid-news-hover">
             <div class="container">
-
 	            <div class="text-center mb-80">
 	                <h2 class="section-title text-uppercase">Latest Post</h2>
 	                <p class="section-sub">Quisque non erat mi. Etiam congue et augue sed tempus. Aenean sed ipsum luctus, scelerisque ipsum nec, iaculis justo. Sed at vestibulum purus, sit amet viverra diam nulla ac nisi rhoncus.</p>
@@ -339,7 +338,7 @@
               <div class="row">
                 <div class="col-md-4">
                     <article class="post-wrapper">
-
+                            
                       <div class="thumb-wrapper waves-effect waves-block waves-light">
                         <a href="#"><img src="assets/img/corporate/blog-8.jpg" class="img-responsive" alt="" ></a>
                         <div class="post-date">
@@ -348,6 +347,7 @@
                       </div><!-- .post-thumb -->
 
                       <div class="blog-content">
+                          
 
                         <div class="hover-overlay green-bg"></div>
 
