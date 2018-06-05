@@ -327,22 +327,23 @@
             </div><!-- /.container -->
         </section>
 
-
+       <?php print("<pre>"); print_r($process[0]['Title']); print("</pre>"); ?>    
         <section class="section-padding grid-news-hover">
             <div class="container">
 	            <div class="text-center mb-80">
-	                <h2 class="section-title text-uppercase">Latest Post</h2>
-	                <p class="section-sub">Quisque non erat mi. Etiam congue et augue sed tempus. Aenean sed ipsum luctus, scelerisque ipsum nec, iaculis justo. Sed at vestibulum purus, sit amet viverra diam nulla ac nisi rhoncus.</p>
+	                <h2 class="section-title text-uppercase"><?php echo $process[0]['Title'] ?></h2>
+	                <p class="section-sub"><?php echo $process[0]['post_content'] ?></p>
 	            </div>
 
               <div class="row">
+                  <?php foreach($process as $row) { ?>
                 <div class="col-md-4">
                     <article class="post-wrapper">
                             
                       <div class="thumb-wrapper waves-effect waves-block waves-light">
-                        <a href="#"><img src="assets/img/corporate/blog-8.jpg" class="img-responsive" alt="" ></a>
+                        <a href="<?php echo $row['URL'] ?>"><img src="<?php echo $row['image_src'] ?>" class="img-responsive" alt="" ></a>
                         <div class="post-date">
-                            25<span>Jun</span>
+                            <?php echo $row['day'] ?><span><?php echo $row['month']; ?></span>
                         </div>
                       </div><!-- .post-thumb -->
 
@@ -353,15 +354,15 @@
 
                         <header class="entry-header-wrapper">
                           <div class="entry-header">
-                            <h2 class="entry-title"><a href="#">Ideas That Moved Us in 2017</a></h2>
+                            <h2 class="entry-title"><a href="#"><?php echo $row['Title']; ?></a></h2>
 
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li>
-                                        By <a href="#">Admin</a>
+                                        By <a href="#"><?php echo $row['Author']; ?></a>
                                     </li>
                                     <li>
-                                        In <a href="#">Technology</a>
+                                        In <a href="#"><?php echo $row['Category'] ?></a>
                                     </li>
                                 </ul>
                             </div><!-- .entry-meta -->
@@ -369,93 +370,14 @@
                         </header><!-- /.entry-header-wrapper -->
 
                         <div class="entry-content">
-                          <p>Maecenas varius finibus orci vel dignissim. Nam posuere, magna pellentesque accumsan tincidunt, libero lorem convallis lectus</p>
+                          <p><?php echo $row['post_content'] ?></p>
                         </div><!-- .entry-content -->
 
                       </div><!-- /.blog-content -->
 
                     </article><!-- /.post-wrapper -->
                 </div><!-- /.col-md-4 -->
-
-                <div class="col-md-4">
-                    <article class="post-wrapper">
-
-                      <div class="thumb-wrapper waves-effect waves-block waves-light">
-                        <a href="#"><img src="assets/img/corporate/blog-7.jpg" class="img-responsive" alt="" ></a>
-                        <div class="post-date">
-                            25<span>Jun</span>
-                        </div>
-                      </div><!-- .post-thumb -->
-
-                      <div class="blog-content">
-
-                        <div class="hover-overlay green-bg"></div>
-
-                        <header class="entry-header-wrapper">
-                          <div class="entry-header">
-                            <h2 class="entry-title"><a href="#">Ideas That Moved Us in 2017</a></h2>
-
-                            <div class="entry-meta">
-                                <ul class="list-inline">
-                                    <li>
-                                        By <a href="#">Admin</a>
-                                    </li>
-                                    <li>
-                                        In <a href="#">Technology</a>
-                                    </li>
-                                </ul>
-                            </div><!-- .entry-meta -->
-                          </div><!-- /.entry-header -->
-                        </header><!-- /.entry-header-wrapper -->
-
-                        <div class="entry-content">
-                          <p>Maecenas varius finibus orci vel dignissim. Nam posuere, magna pellentesque accumsan tincidunt, libero lorem convallis lectus</p>
-                        </div><!-- .entry-content -->
-
-                      </div><!-- /.blog-content -->
-
-                    </article><!-- /.post-wrapper -->
-                </div><!-- /.col-md-4 -->
-
-                <div class="col-md-4">
-                    <article class="post-wrapper">
-
-                      <div class="thumb-wrapper waves-effect waves-block waves-light">
-                        <a href="#"><img src="assets/img/corporate/blog-9.jpg" class="img-responsive" alt="" ></a>
-                        <div class="post-date">
-                            25<span>Jun</span>
-                        </div>
-                      </div><!-- .post-thumb -->
-
-                      <div class="blog-content">
-
-                        <div class="hover-overlay green-bg"></div>
-
-                        <header class="entry-header-wrapper">
-                          <div class="entry-header">
-                            <h2 class="entry-title"><a href="#">Ideas That Moved Us in 2017</a></h2>
-
-                            <div class="entry-meta">
-                                <ul class="list-inline">
-                                    <li>
-                                        By <a href="#">Admin</a>
-                                    </li>
-                                    <li>
-                                        In <a href="#">Technology</a>
-                                    </li>
-                                </ul>
-                            </div><!-- .entry-meta -->
-                          </div><!-- /.entry-header -->
-                        </header><!-- /.entry-header-wrapper -->
-
-                        <div class="entry-content">
-                          <p>Maecenas varius finibus orci vel dignissim. Nam posuere, magna pellentesque accumsan tincidunt, libero lorem convallis lectus</p>
-                        </div><!-- .entry-content -->
-
-                      </div><!-- /.blog-content -->
-
-                    </article><!-- /.post-wrapper -->
-                </div><!-- /.col-md-4 -->
+                  <?php } ?>               
               </div><!-- /.row -->
 
             </div><!-- /.container -->
