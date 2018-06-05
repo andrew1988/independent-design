@@ -1,2 +1,3 @@
 /application/config/config.php
 /blog/wp-config.php
+/application/config/database.php
