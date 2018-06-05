@@ -326,8 +326,7 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section>
-
-       <?php print("<pre>"); print_r($process[0]['Title']); print("</pre>"); ?>    
+  
         <section class="section-padding grid-news-hover">
             <div class="container">
 	            <div class="text-center mb-80">
