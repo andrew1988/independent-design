@@ -19,19 +19,14 @@ class EntryPage extends CI_Controller {
             foreach($lastArticles as $lastArticle) { 
                 $result1 = preg_match_all('/<img[^>]+>/i',$lastArticle['post_content'], $result);
                 if(!empty($result1)){
-                    
                     $htmlDoc = new DOMDocument();
                     $htmlDoc->loadHtml($result[0][0]);
                     $srcPath  = new DOMXPath($htmlDoc);
-                    $actualSrc = $srcPath->evaluate("string(//img/@src)"); 
-                    
+                    $actualSrc = $srcPath->evaluate("string(//img/@src)");
                 } else {
                     $actualSrc = base_url('/assets/placeholder.png');
                 }
-                
-                print("<pre>"); print_r($lastArticle['post_content']); print("</pre>");
                 $datetime = new DateTime($lastArticle['Date']);
-                
                 $lastArticle['post_content'] = strip_tags(html_entity_decode($lastArticle['post_content']));
                 $lastArticle['post_content'] = substr($lastArticle['post_content'],0,200);
                 $lastArticle['image_src'] = $actualSrc;
@@ -40,7 +35,6 @@ class EntryPage extends CI_Controller {
                 $lastArticle['Category'] = (empty($lastArticle['Category']) ? 'unknown' : $lastArticle['Category'] );
                 $processedData[] = $lastArticle;
             }
-            
             return $processedData;
         }
 }
