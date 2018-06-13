@@ -54,6 +54,7 @@ $route['services'] = 'ServicesPage';
 $route['about-us'] = 'About_us';
 $route['price-calculator'] = 'PriceCalculator';
 $route['contact'] = 'Contact';
+$route['send_message'] = 'Contact/sendMessage';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 //================================admin routes==================================
