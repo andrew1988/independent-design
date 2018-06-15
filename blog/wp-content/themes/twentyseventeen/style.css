@@ -1871,6 +1871,10 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	position: relative;
 }
 
+.site-content-contain {
+    	background-color: #303b41 !important;
+}
+
 .site-content {
 	padding: 2.5em 0 0;
 }
@@ -4333,9 +4337,6 @@ p > object:only-child {
       	color: white !important;
     }
 
-    .site-content-contain {
-    	background-color: #303b41 !important;
-    }
 
     .site-content-contain .wrap{
     	background-color: white !important;

@@ -21,9 +21,11 @@ class Contact extends CI_Controller {
             $this->form_validation->set_rules('name','Name','min_length[2]|max_length[200]|trim|required|alpha');
             $this->form_validation->set_rules('email','Email','min_length[2]|max_length[200]|trim|required|valid_email');
             //$this->form_validation->set_rules('subject','Subject','min_length[2]|max_length[200]|trim|required');
-            $this->form_validation->set_rules('message','Message','min_length[2]|max_length[200]|trim|required');
-            $this->form_validation->set_rules('web','Web Site','min_length[2]|max_length[1000]|trim');
+            $this->form_validation->set_rules('message','Message','min_length[2]|max_length[1000]|trim|required');
+            $this->form_validation->set_rules('web','Web Site','min_length[2]|max_length[200]|trim');
             $this->form_validation->set_rules('phone','Web Site','exact_length[10]|trim|numeric');
+            $date = new DateTime();
+
             
             if($this->form_validation->run() == true) {
 
@@ -31,10 +33,12 @@ class Contact extends CI_Controller {
                     'name' => $this->input->post('name'),
                     'email' => $this->input->post('email'),
                     'phone' => $this->input->post('phone'),
-                    'website' => $this->input->post('website'),
-                    'subject' => $this->input->post('subject'),
+                    'website' => $this->input->post('web'),
+                    //'subject' => $this->input->post('subject'),
                     'message' => $this->input->post('message'),
-                    'message_status' => false,  
+                    'message_status' => false,
+                    'date_received'  => $date->format('Y-m-d H:i:s'),
+                    'ip_sent_from' => $_SERVER['REMOTE_ADDR']
                 ];
 
                 $this->load->model('ContactModel');
