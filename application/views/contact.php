@@ -18,7 +18,7 @@
             <div class="row">
 
                 <div class="col-md-8">
-                    <form name="contact-form" id="contactForm" action="sendemail.php" method="POST">
+                    <form name="contact-form" id="contactForm" action="<?php echo base_url('send_message') ?>" method="POST">
 
                       <div class="row">
                         <div class="col-md-6">
@@ -48,7 +48,7 @@
 
                         <div class="col-md-6">
                           <div class="input-field">
-                            <input id="website" type="text" name="website" class="validate" >
+                            <input id="web" type="text" name="web" class="validate" >
                             <label for="website">Your Website</label>
                           </div>
                         </div><!-- /.col-md-6 -->

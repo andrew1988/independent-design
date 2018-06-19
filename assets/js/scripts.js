@@ -451,8 +451,7 @@ Version: 1.4
 
 
         /* ======= Contact Form ======= */
-        $('#contactForm').on('submit',function(e){
-
+         $('#contactForm').on('submit',function(e){
             e.preventDefault();
 
             var $action = $(this).prop('action');
@@ -464,19 +463,19 @@ Version: 1.4
             $.post( $action, $data, function( data ) {
 
                 if( data.response=='error' ){
-
                     $this.before( '<div class="alert danger-border"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <i class="fa fa-times-circle"></i> '+data.message+'</div>' );
                 }
 
                 if( data.response=='success' ){
-
                     $this.before( '<div class="alert success-border"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><i class="fa fa-thumbs-o-up"></i> '+data.message+'</div>' );
                     $this.find('input, textarea').val('');
                 }
 
             }, "json");
 
-        });
+
+
+         });
 
 
         /* ======= Stellar for background scrolling ======= */

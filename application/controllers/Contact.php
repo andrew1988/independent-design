@@ -33,7 +33,7 @@ class Contact extends CI_Controller {
                     'name' => $this->input->post('name'),
                     'email' => $this->input->post('email'),
                     'phone' => $this->input->post('phone'),
-                    'website' => $this->input->post('web'),
+                    'website' => 'site.com',//$this->input->post('web'),
                     //'subject' => $this->input->post('subject'),
                     'message' => $this->input->post('message'),
                     'message_status' => false,
@@ -43,12 +43,12 @@ class Contact extends CI_Controller {
 
                 $this->load->model('ContactModel');
                 $this->ContactModel->addMesage($contactData);
+                $data = ['response'=>'success', 'message' => 'Mesajul a fost trimis, veti fi contactat in curand'];
+            } else {
+                $data = ['response'=>'error', 'message' => validation_errors()];
             }
-            
-            $this->load->view("header");           //load common header
-            $this->load->view("site_header", $site_header_data);     //menu logo and social bar
-            $this->load->view('contact');     //load specific content
-            $this->load->view('footer');        //web site footer
+
+            echo json_encode($data);
             
         }
 	

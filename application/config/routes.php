@@ -59,3 +59,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 //================================admin routes==================================
 $route['admin_login'] = 'admin/Admin_login';
+$route['admin'] = 'admin/Admin_login';
+$route['admin_logout'] = 'admin/Admin_logout';
+$route['admin_messages'] = 'admin/Messages';
+$route['admin_home'] =  'admin/Admin_home';
