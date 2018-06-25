@@ -63,3 +63,5 @@ $route['admin'] = 'admin/Admin_login';
 $route['admin_logout'] = 'admin/Admin_logout';
 $route['admin_messages'] = 'admin/Messages';
 $route['admin_home'] =  'admin/Admin_home';
+$route['admin_logout'] =  'admin/Admin_login/logOut';
+$route['admin_messages'] = 'admin/Admin_messages';

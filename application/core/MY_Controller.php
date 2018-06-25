@@ -11,15 +11,16 @@ class MY_Controller extends CI_Controller{
         $currentRoute = $this->uri->segment(1);
         if(($this->isLoggedFlag == 0) && ($currentRoute != 'admin_login')){
         	redirect(base_url('admin_login'));
-        } else if($this->isLoggedFlag == 1){
+        } else if(($this->isLoggedFlag == 1) && (($currentRoute == 'admin') || ($currentRoute == 'admin_login') )) {
         	redirect(base_url('admin_home'));
         }
     }
 
-
     public function checkLogin() {
+
     	$session_data = $this->session->all_userdata();
-        if((isset($session_data['return_type']))&&($session_data['return_type'] == 1)&&(isset($session_data['usr_username']))){
+
+        if((isset($session_data['return_type']))&&($session_data['return_type'] == 1)){
             return $this->isLoggedFlag = 1; //is logged in
         } 
         else{
