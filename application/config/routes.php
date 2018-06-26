@@ -65,3 +65,4 @@ $route['admin_messages'] = 'admin/Messages';
 $route['admin_home'] =  'admin/Admin_home';
 $route['admin_logout'] =  'admin/Admin_login/logOut';
 $route['admin_messages'] = 'admin/Admin_messages';
+$route['admin_read_message/(:num)'] = 'admin/Admin_messages/readMessage/$1';

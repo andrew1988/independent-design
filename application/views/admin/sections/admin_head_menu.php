@@ -8,7 +8,8 @@
 <!--top-Header-menu-->
 <div id="user-nav" class="navbar navbar-inverse">
   <ul class="nav">
-    <li class="" ><a href="<?php echo base_url('admin_messages') ?>"><i class="icon icon-envelope"></i> <span class="text">Messages</span> <span class="label label-important">5</span></a>
+    <li class="" ><a href="<?php echo base_url('admin_messages') ?>"><i class="icon icon-envelope"></i> <span class="text">Messages</span>
+                  <span class="label label-important"><?php echo $messageNb ?></span></a>
      <!-- <ul class="dropdown-menu">
         <li><a class="sAdd" title="" href="#"><i class="icon-plus"></i> new message</a></li>
         <li class="divider"></li>
