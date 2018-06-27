@@ -42,8 +42,12 @@ class MessagesModel extends CI_Model
     }
 
 
-    public function deleteMessage()
+    public function deleteMessage($id)
     {
+        $this->db->where('id',$id);
+        $this->db->delete('contact');
+
+        return true;
 
     }
 

@@ -66,3 +66,4 @@ $route['admin_home'] =  'admin/Admin_home';
 $route['admin_logout'] =  'admin/Admin_login/logOut';
 $route['admin_messages'] = 'admin/Admin_messages';
 $route['admin_read_message/(:num)'] = 'admin/Admin_messages/readMessage/$1';
+$route['admin_delete_message/(:num)'] = 'admin/Admin_messages/deleteMessage/$1';

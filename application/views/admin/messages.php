@@ -15,6 +15,7 @@
                    <th scope = "col" > Name</th >
                    <th scope = "col" > Email</th >
                    <th scope = "col" > Date received</th >
+                   <th scope = "col" > Actions</th >
                 </tr >
             </thead >';
     $i=1;
@@ -26,6 +27,7 @@
                     <td ><a href="'.base_url('admin_read_message/'.$unreadMessage["id"]).'"><b>'.$unreadMessage["name"].'</b></a></td >
                     <td ><a href="'.base_url('admin_read_message/'.$unreadMessage["id"]).'">'.$unreadMessage["email"].'</a></td >
                     <td >'.$unreadMessage["date_received"].'</td >
+                    <td style="text-align: center;"><a href="'.base_url('admin_delete_message/'.$unreadMessage["id"]).' "type="button" class="btn btn-danger btn-sm">Delete</a></td>
                 </tr >
              ';
         $i++;
@@ -40,6 +42,7 @@
                    <th scope = "col" > Name</th >
                    <th scope = "col" > Email</th >
                    <th scope = "col" > Date received</th >
+                   <th scope = "col" > Actions</th >
                 </tr >
             </thead >';
     $i=1;
@@ -51,6 +54,7 @@
                     <td ><a href="'.base_url('admin_read_message/'.$readMessage["id"]).'">'.$readMessage["name"].'</a></td >
                     <td ><a href="'.base_url('admin_read_message/'.$readMessage["id"]).'">'.$readMessage["email"].'</a></td >
                     <td >'.$readMessage["date_received"].'</td >
+                    <td style="text-align: center;"><a href="'.base_url('admin_delete_message/'.$readMessage["id"]).'" type="button" class="btn btn-danger btn-sm">Delete</a></td>
                 </tr >
              ';
         $i++;

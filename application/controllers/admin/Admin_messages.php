@@ -41,4 +41,14 @@ class Admin_messages extends MY_Controller
         $this->load->view('admin/sections/admin_footer');
 
     }
+
+    public function deleteMessage()
+    {
+        $this->load->model('admin/MessagesModel');
+        $messageId = $this->uri->segment(2);
+        $messageDetails = $this->MessagesModel->deleteMessage($messageId);
+
+        redirect('admin_messages');
+
+    }
 }
