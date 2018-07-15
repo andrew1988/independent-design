@@ -11,9 +11,10 @@ class LatestArticlesModel extends CI_Model{
     }
        
     public function getLastArticles(){
+         $baseUrl = base_url();
          $getArticlesSql = '
               SELECT p.ID,DATE(p.post_date) Date,u.display_name Author,p.post_title Title,GROUP_CONCAT(t.name) Category,
-              CONCAT("http://yourdomain.com/blog/",p.post_name) URL, post_content
+              CONCAT("'.$baseUrl.'blog/",p.post_name) URL, post_content
               FROM wp_posts p
               LEFT JOIN wp_users u ON p.post_author = u.ID
               LEFT JOIN wp_term_relationships rel ON rel.object_id = p.ID

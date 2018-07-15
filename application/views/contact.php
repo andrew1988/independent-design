@@ -86,7 +86,7 @@
                       <i class="material-icons brand-color">&#xE0B7;</i>
                       <div class="mail">
                         <p><a href="mailto:#">first.last@example.com</a><br>
-                        <a href="#">www.yourdomain.com</a></p>
+                        <a href="http://www.independent-design.eu">www.independent-design.eu</a></p>
                       </div>
                     </address>
                 </div><!-- /.col-md-4 -->

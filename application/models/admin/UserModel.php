@@ -4,7 +4,7 @@ class UserModel extends CI_Model{
 
     public function checkLogin($params){
         extract($params);
-        $query = $this->db->get_where('users',array('username'=>$username,'password'=>$password));
+        $query = $this->db->get_where('users',array('username'=>$username,'password'=>sha1($password)));
         $rezultate = $query->result_array();
         $data = array();
         if(count($rezultate) != 0){

@@ -354,15 +354,15 @@
 
                         <header class="entry-header-wrapper">
                           <div class="entry-header">
-                            <h2 class="entry-title"><a href="#"><?php echo $row['Title']; ?></a></h2>
+                            <h2 class="entry-title"><a href="<?php echo $row['URL'] ?>" ><?php echo $row['Title']; ?></a></h2>
 
                             <div class="entry-meta">
                                 <ul class="list-inline">
                                     <li>
-                                        By <a href="#"><?php echo $row['Author']; ?></a>
+                                        By <a href="<?php echo $row['URL'] ?>"><?php echo $row['Author']; ?></a>
                                     </li>
                                     <li>
-                                        In <a href="#"><?php echo $row['Category'] ?></a>
+                                        In <a href="<?php echo $row['URL'] ?>"><?php echo $row['Category'] ?></a>
                                     </li>
                                 </ul>
                             </div><!-- .entry-meta -->
