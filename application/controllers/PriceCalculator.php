@@ -14,4 +14,9 @@ class PriceCalculator extends CI_Controller {
                 $this->load->view('footer');        //web site footer
 	}
 
+	public function calculatePrice()
+    {
+
+    }
+
 }

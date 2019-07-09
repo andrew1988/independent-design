@@ -1,20 +1,15 @@
-
-        
-
         <!--page title start-->
         <section class="page-title page-title-bg page-title-center ptb-90">
             <div class="container">
-                <h2 class="text-bold white-text font-40">Price calculator</h2>
+                <h2 class="text-bold white-text font-40">Calculator de pret</h2>
                 <ol class="breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li class="active">Price calculator</li>
+                    <li class="active">Calculator de pret</li>
                 </ol>
             </div>
         </section>
         <!--page title end-->
-
-
-
+        <form action="#" method="post">
         <section class="section-padding">
           <div class="container">
             <div class="row featured-item hover-outline brand-hover radius-4">
@@ -22,7 +17,6 @@
                 <h2>What best describes you</h2>
                 <div class="">
                           <div class="desc">
-                              
                               <p>
                                   <input type="radio" name="description" value="1"> I need to hire a web designer.<br>
                                   <input type="radio" name="description" value="2"> I am a website designer.<br>
@@ -30,6 +24,21 @@
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
+            </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                  <h2>Web site type:</h2>
+                  <div class="">
+                      <div class="desc">
+                          <p>
+                              <input type="radio" name="website_type" value="1"> Site de prezentare personal/de firma.<br>
+                              <input type="radio" name="website_type" value="2"> Site de e-comnert.<br>
+                              <input type="radio" name="website_type" value="3">Portal web.<br>
+                              <input type="radio" name="website_type" value="3">Portofoliu.<br>
+                              <input type="radio" name="website_type" value="3">Media sau entertainment.<br>
+                          </p>
+                      </div>
+                </div><!-- /.featured-item -->
             </div>
             <div class="row featured-item hover-outline brand-hover radius-4">
                 <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
@@ -138,10 +147,12 @@
                           </div>
                       </div><!-- /.featured-item -->
                 
-            </div>  
+            </div>
+              <button type="submit" name="submit" class="waves-effect waves-light btn submit-button mt-30">Send Request</button>
           </div>
         </section>
 
+        </form>
 
 
         <section class="section-padding chart-wrapper overlay">
