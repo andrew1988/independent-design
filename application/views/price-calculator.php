@@ -9,7 +9,7 @@
             </div>
         </section>
         <!--page title end-->
-        <form action="#" method="post">
+        <form action="<?php echo base_url('calculate_price') ?>" method="post">
         <section class="section-padding">
           <div class="container">
             <div class="row featured-item hover-outline brand-hover radius-4">
@@ -18,12 +18,25 @@
                 <div class="">
                           <div class="desc">
                               <p>
-                                  <input type="radio" name="description" value="1"> I need to hire a web designer.<br>
-                                  <input type="radio" name="description" value="2"> I am a website designer.<br>
-                                  <input type="radio" name="description" value="3"> I am a student or just doing research.
+                                  <input type="radio" name="description" value="1"> Vreau sa angajez un web design.<br>
+                                  <input type="radio" name="description" value="2"> Sunt deja web designer, ma informez.<br>
+                                  <input type="radio" name="description" value="3"> Doar ma interesez, sunt in cautare de oferte.
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
+            </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                  <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                  <h2>Basic Website Needs</h2>
+                  <div class="">
+                      <div class="desc">
+                          <p>
+                              <input type="radio" name="basic_needs" id="type_1" checked value="new_website"> Am nevoie de un web site nou.<br>
+                              <input type="radio" name="basic_needs" id="type_2" value="total_revamp"> Am nevoie de o modernizare totala pentru un site pe care il detin deja.<br>
+                              <input type="radio" name="basic_needs" id="type_3" value="minor_updates"> Site-ul meu are nevoie de schimbari minore.
+                          </p>
+                      </div>
+                  </div><!-- /.featured-item -->
             </div>
             <div class="row featured-item hover-outline brand-hover radius-4">
                 <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
@@ -31,86 +44,73 @@
                   <div class="">
                       <div class="desc">
                           <p>
-                              <input type="radio" name="website_type" value="1"> Site de prezentare personal/de firma.<br>
-                              <input type="radio" name="website_type" value="2"> Site de e-comnert.<br>
-                              <input type="radio" name="website_type" value="3">Portal web.<br>
-                              <input type="radio" name="website_type" value="3">Portofoliu.<br>
-                              <input type="radio" name="website_type" value="3">Media sau entertainment.<br>
+                              <input type="radio" name="website_type" id="personal" value="450">Site de prezentare personal/de firma.<br>
+                              <input type="radio" name="website_type" id="ecommerce" value="3000">Site de e-comnert.<br>
+                              <input type="radio" name="website_type" id="portal_web" value="2500">Portal web generalist.<br>
+                              <input type="radio" name="website_type" id="catalog_site" value="1000">Site Tip Catalog Sau Portofoliu.<br>
+                              <input type="radio" name="website_type" id="media_site" value="500">Portal/Site de stiri/Media.<br>
+                              <input type="radio" name="website_type" id="blog" value="100">Blog.<br>
                           </p>
                       </div>
                 </div><!-- /.featured-item -->
             </div>
+
+              <!-- <div class="row featured-item hover-outline brand-hover radius-4" style="display: none" id="ecomercediv">
+                  <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                    <h2>Ecommerce</h2>`
+                    <div class="">
+                        <div class="desc">
+                            <p>
+                                <input type="checkbox" name="ecomerce[shopping_cart]" value="200">Database shopping cart.<br>
+                                <input type="checkbox" name="ecomerce[payment_processing]" value="16">Credit Card Processing.<br>
+                            </p>
+                        </div>
+                    </div><!-- /.featured-item
+            </div> -->
+              <div class="row featured-item hover-outline brand-hover radius-4">
+                  <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                  <h2>Integrations</h2>
+                  <div class="">
+                      <div class="desc">
+                          <p>
+                              <input type="checkbox" name="public[member_registration]" value="100">Logare cu facebook.<br>
+                              <input type="checkbox" name="public[member_registration]" value="100">Logare cu google.<br>
+                              <input type="checkbox" name="public[resposive_design]" value="50">Like-uri pe pagini specifice.<br>
+                              <input type="checkbox" name="public[rss_news_feed]" value="50"> Share pe pagini specifice<br>
+                              <input type="checkbox" name="public[google_maps]" value="100">Integrare cu google maps.<br>
+                              <input type="checkbox" name="public[contact_form]" value="50">Contact Form.<br>
+                              <input type="checkbox" name="public[site_search]" value="100">Site Search.<br>
+                              <input type="checkbox" name="public[file_uploads]" value="100">User File Uploads.<br>
+                              <input type="checkbox" name="public[file_uploads]" value="50">Share pe twitter.<br>
+                              <input type="checkbox" name="public[file_uploads]" value="100">Alt tip de integrare.<br>
+                              <textarea name="other_types"></textarea>
+                          </p>
+                      </div>
+                  </div><!-- /.featured-item -->
+              </div>
+              <div class="row featured-item hover-outline brand-hover radius-4">
+                  <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                  <h2> Tip grafica</h2>
+                  <div class="">
+                      <div class="desc">
+                          <p>
+                              <input type="radio" name="graphics" value="300">Design fluid.<br>
+                              <input type="radio" name="graphics" value="100">Design fix.<br>
+                          </p>
+                      </div>
+                  </div><!-- /.featured-item -->
+
+              </div>
             <div class="row featured-item hover-outline brand-hover radius-4">
                 <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2>Basic Website Needs</h2>
+                <h2> Elemente grafice</h2>
                 <div class="">
                           <div class="desc">
                               <p>
-                                  <input type="radio" name="description" value="1"> I need a brand new website I can edit myself.<br>
-                                  <input type="radio" name="description" value="2"> I need a total revamp of my current website.<br>
-                                  <input type="radio" name="description" value="3"> My website needs minor changes and updates.
-                              </p>
-                          </div>
-                      </div><!-- /.featured-item -->
-            </div>
-            <div class="row featured-item hover-outline brand-hover radius-4">
-                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2>Graphics</h2>
-                <div class="">
-                          <div class="desc">
-                              <p>
-                                  <input type="radio" name="description" value="1">I will supply web-ready images.<br>
-                                  <input type="radio" name="description" value="2">I need custom graphics created for my website.<br>
-                                  <input type="radio" name="description" value="3">I need a slideshow, gallery or online portfolio.<br>
-                                  <input type="radio" name="description" value="3">I need catalog images edited and integrated..<br>
-                              </p>
-                          </div>
-                      </div><!-- /.featured-item -->
-                
-            </div>
-            <div class="row featured-item hover-outline brand-hover radius-4">
-                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2>Public Features</h2>
-                <div class="">
-                          <div class="desc">
-                              <p>
-                                  <input type="checkbox" name="description" value="1">Member Registration.<br>
-                                  <input type="checkbox" name="description" value="2">Responsive Design (Mobile Friendly).<br>
-                                  <input type="checkbox" name="description" value="3"> RSS News Feeds.<br>
-                                  <input type="checkbox" name="description" value="3">Google Maps Integration.<br>
-                                  <input type="checkbox" name="description" value="3">Contact Form.<br>
-                                  <input type="checkbox" name="description" value="3">Site Search.<br>
-                                  <input type="checkbox" name="description" value="3">User File Uploads.<br>
-                              </p>
-                          </div>
-                      </div><!-- /.featured-item -->
-                
-            </div>
-            <div class="row featured-item hover-outline brand-hover radius-4">
-                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2>Ecommerce</h2>
-                <div class="">
-                          <div class="desc">
-                              <p>
-                                  <input type="checkbox" name="description" value="3">One page of products..<br>
-                                  <input type="checkbox" name="description" value="3">Database shopping cart.<br>
-                                  <input type="checkbox" name="description" value="3">Credit Card Processing.<br>
-                                  <input type="checkbox" name="description" value="3">PayPal Processing.<br>
-                              </p>
-                          </div>
-                      </div><!-- /.featured-item -->
-                
-            </div>
-            <div class="row featured-item hover-outline brand-hover radius-4">
-                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2>Admin Features</h2>
-                <div class="">
-                          <div class="desc">
-                              <p>
-                                  <input type="checkbox" name="description" value="3">Photo Gallery.<br>
-                                  <input type="checkbox" name="description" value="3">Manage Users<br>
-                                  <input type="checkbox" name="description" value="3">Database Reports.<br>
-                                  <input type="checkbox" name="description" value="3">Traffic Statistic Reports.<br>
+                                  <input type="radio" name="graphics" value="100">Voi trimite grafica site-ului gata de utilizare(imagini, poze etc).<br>
+                                  <input type="radio" name="graphics" value="500">Am nevoie de grafica speciala creata pentru site-ul meu.<br>
+                                  <input type="radio" name="graphics" value="150">Am nevoie de galerii de poze/slideshow.<br>
+                                  <input type="radio" name="graphics" value="400">Doresc sa se integreze si editeze un catalaog de imagini pe care le detin..<br>
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
@@ -118,16 +118,26 @@
             </div>
             <div class="row featured-item hover-outline brand-hover radius-4">
                 <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2>SEO</h2>
+                <h2>Alte servicii</h2>
                 <div class="">
                           <div class="desc">
                               <p>
-                                  <input type="checkbox" name="description" value="3">MetaTag Keyword Optimization.<br>
-                                  <input type="checkbox" name="description" value="3"Search Engine Submission<br>
-                                  <input type="checkbox" name="description" value="3">Minor Link Building<br>
-                                  <input type="checkbox" name="description" value="3">Major Link Building<br>
-                                  <input type="checkbox" name="description" value="3">Press Release Submission<br>
-                                  <input type="checkbox" name="description" value="3">Press Release Writing<br>
+                                  <input type="checkbox" name="admin_features[manage_users]" value="1000">Transfer(migrare) baze de date<br>
+                              </p>
+                          </div>
+                      </div><!-- /.featured-item -->
+                
+            </div>
+            <div class="row featured-item hover-outline brand-hover radius-4">
+                <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
+                <h2>SEO Si Promovare Web</h2>
+                <div class="">
+                          <div class="desc">
+                              <p>
+                                  <input type="checkbox" name="seo[meta_tag]" value="100">Optimizare metatag-uri si alte elemente de baza.<br>
+                                  <input type="checkbox" name="seo[search_engine_optimization]" value="50">Inscriere in diferitele motoare de cautare<br>
+                                  <input type="checkbox" name="seo[press_releases]" value="500">Articole in ziare/pe diverse site-uri(publicitate)<br>
+                                  <input type="checkbox" name="seo[press_releases]" value="100">Reclama contextuala<br>
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
@@ -139,10 +149,9 @@
                 <div class="">
                           <div class="desc">
                               <p>
-                                  <input type="checkbox" name="description" value="3">Twitter Integration.<br>
-                                  <input type="checkbox" name="description" value="3">Facebook Page<br>
-                                  <input type="checkbox" name="description" value="3">Facebook App<br>
-                                  <input type="checkbox" name="description" value="3">Android iPhone App
+                                  <input type="checkbox" name="social[facebook]" value="50">Facebook Page<br>
+                                  <input type="checkbox" name="social[facebook]" value="50">Alt tip de integrare sociala:<br>
+                                  <textarea></textarea>
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
@@ -207,10 +216,6 @@
             </div><!-- /.container -->
         </section>
 
-
-
-       
-
         <script>
           $('.chart-skill-wrapper').on('inview', function(event, visible, visiblePartX, visiblePartY) {
               if (visible) {
@@ -234,6 +239,4 @@
           });
 
         </script>
- 
-  
 </html>

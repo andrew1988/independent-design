@@ -53,6 +53,7 @@ $route['default_controller'] = 'EntryPage';
 $route['services'] = 'ServicesPage';
 $route['about-us'] = 'About_us';
 $route['price-calculator'] = 'PriceCalculator';
+$route['calculate_price'] = 'PriceCalculator/calculatePrice';
 $route['contact'] = 'Contact';
 $route['send_message'] = 'Contact/sendMessage';
 $route['404_override'] = '';
