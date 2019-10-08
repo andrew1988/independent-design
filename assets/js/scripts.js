@@ -596,32 +596,32 @@ Version: 1.4
         /* ======= jquery price changer depending on previous selection ======= */
         $('#type_1').click(function(){
             alert("ajunge aici type 1");
-            $('#personal').attr('value', '450');
-            $('#ecommerce').attr('value', '3000');
-            $('#portal_web').attr('value', '2500');
-            $('#catalog_site').attr('value', '1000');
-            $('#media_site').attr('value', '500');
-            $('#blog').attr('value', '100');
+            $('#personal').attr('value', '10');
+            $('#ecommerce').attr('value', '20');
+            $('#portal_web').attr('value', '30');
+            $('#catalog_site').attr('value', '40');
+            $('#media_site').attr('value', '50');
+            $('#blog').attr('value', '60');
         });
 
         $('#type_2').click(function(){
             alert("ajunge aici type 2");
-            $('#personal').attr('value', '400');
-            $('#ecommerce').attr('value', '3100');
-            $('#portal_web').attr('value', '2600');
-            $('#catalog_site').attr('value', '1100');
-            $('#media_site').attr('value', '600');
-            $('#blog').attr('value', '200');
+            $('#personal').attr('value', '100');
+            $('#ecommerce').attr('value', '200');
+            $('#portal_web').attr('value', '300');
+            $('#catalog_site').attr('value', '400');
+            $('#media_site').attr('value', '500');
+            $('#blog').attr('value', '600');
         });
 
         $('#type_3').click(function(){
             alert("ajunge aici");
-            $('#personal').attr('value', 'changed');
-            $('#ecommerce').attr('value', 'changed');
-            $('#portal_web').attr('value', 'changed');
-            $('#catalog_site').attr('value', 'changed');
-            $('#media_site').attr('value', 'changed');
-            $('#blog').attr('value', 'changed');
+            $('#personal').attr('value', '1000');
+            $('#ecommerce').attr('value', '2000');
+            $('#portal_web').attr('value', '3000');
+            $('#catalog_site').attr('value', '4000');
+            $('#media_site').attr('value', '5000');
+            $('#blog').attr('value', '6000');
         });
 
     });

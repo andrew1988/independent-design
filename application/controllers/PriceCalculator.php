@@ -32,21 +32,64 @@ class PriceCalculator extends CI_Controller {
     */
 	public function calculatePrice()
     {
-        $calculatorData = [
+
+        // Loads a config file named calculator_actions_descriptions.php and assigns it to an index named "calculator_actions_descriptions"
+        $this->config->load('calculator_actions_descriptions', TRUE);
+        $descriptions = $this->config->item('calculator_actions_descriptions');
+
+        $infoData = [
             'description' => !empty($this->input->post('description')) ? $this->input->post('description') : null,
             'basic_needs' => !empty($this->input->post('basic_needs')) ? $this->input->post('basic_needs') : null,
-            'graphics' => !empty($this->input->post('basic_needs')) ? $this->input->post('basic_needs') : null,
-            'public' => !empty($this->input->post('public')) ? $this->input->post('public') : null,
-            'public' => !empty($this->input->post('ecomerce')) ? $this->input->post('ecomerce') : null,
         ];
 
-        //avem 3 tipuri de raspunsuri, cuantificabile in ore, necuantificabile(cu pret fix) si informative
+        $calculatorData = [
+            'website_type' => !empty($this->input->post('website_type')) ? $this->input->post('website_type') : null,
+            'graphics' => !empty($this->input->post('graphics')) ? $this->input->post('graphics') : null,
+            'integrations' => !empty($this->input->post('integrations')) ? $this->input->post('integrations') : null,
+            'graphic_elements' => !empty($this->input->post('graphic_elements')) ? $this->input->post('graphic_elements') : null,
+            'other_services' => !empty($this->input->post('other_services')) ? $this->input->post('other_services') : null,
+            'seo' => !empty($this->input->post('seo')) ? $this->input->post('seo') : null,
+            'social' => !empty($this->input->post('social')) ? $this->input->post('social') : null,
+        ];
 
+        $total = 0;
 
-        var_dump($calculatorData);
+        $dataToInsert = array();
+        $temporaryArray = array();
 
+        foreach ($calculatorData as $key=>$value) {
+            $temporaryArray['option'] = $key;
+            $temporaryArray['description'] = '';
+            $temporaryArray['value'] = 0;
+
+            if (is_array($value)) {
+                foreach ($value as $type=>$cost) {
+                    if($type == 'other_social') {
+                        $otherSocialField = $this->input->post('other_social');
+                        $temporaryArray['other_social'] = $otherSocialField;
+                    }
+                    if($type == 'other_integration') {
+                        $otherIntegration = $this->input->post('other_integration');
+                        $temporaryArray['other_integration'] = $otherIntegration;
+                    }
+
+                    $temporaryArray['value'] += (int)$cost;
+                    $temporaryArray['description'] .= ($cost != end($value)) ? $type . ', ' : $type.", ";
+                    $total += $cost;
+                }
+            } else {
+                $temporaryArray['description'] = $descriptions[$key];
+                $temporaryArray['value'] = $value;
+                $total += $value;
+            }
+            $dataToInsert[] = $temporaryArray;
+        }
+
+        //print("<pre>new: $otherSocialField</pre>");
+
+        print('Total: '. $total);
         print("<pre>"); print_r($calculatorData); print("</pre>");
-
+        print("<pre>"); print_r($dataToInsert); print("</pre>");
 
     }
 

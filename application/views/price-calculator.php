@@ -14,7 +14,7 @@
           <div class="container">
             <div class="row featured-item hover-outline brand-hover radius-4">
                 <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2>What best describes you</h2>
+                <h2>What best describes you:</h2>
                 <div class="">
                           <div class="desc">
                               <p>
@@ -27,7 +27,7 @@
             </div>
             <div class="row featured-item hover-outline brand-hover radius-4">
                   <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                  <h2>Basic Website Needs</h2>
+                  <h2>Basic Website Needs:</h2>
                   <div class="">
                       <div class="desc">
                           <p>
@@ -55,42 +55,30 @@
                 </div><!-- /.featured-item -->
             </div>
 
-              <!-- <div class="row featured-item hover-outline brand-hover radius-4" style="display: none" id="ecomercediv">
-                  <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                    <h2>Ecommerce</h2>`
-                    <div class="">
-                        <div class="desc">
-                            <p>
-                                <input type="checkbox" name="ecomerce[shopping_cart]" value="200">Database shopping cart.<br>
-                                <input type="checkbox" name="ecomerce[payment_processing]" value="16">Credit Card Processing.<br>
-                            </p>
-                        </div>
-                    </div><!-- /.featured-item
-            </div> -->
               <div class="row featured-item hover-outline brand-hover radius-4">
                   <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                  <h2>Integrations</h2>
+                  <h2>Integrations:</h2>
                   <div class="">
                       <div class="desc">
                           <p>
-                              <input type="checkbox" name="public[member_registration]" value="100">Logare cu facebook.<br>
-                              <input type="checkbox" name="public[member_registration]" value="100">Logare cu google.<br>
-                              <input type="checkbox" name="public[resposive_design]" value="50">Like-uri pe pagini specifice.<br>
-                              <input type="checkbox" name="public[rss_news_feed]" value="50"> Share pe pagini specifice<br>
-                              <input type="checkbox" name="public[google_maps]" value="100">Integrare cu google maps.<br>
-                              <input type="checkbox" name="public[contact_form]" value="50">Contact Form.<br>
-                              <input type="checkbox" name="public[site_search]" value="100">Site Search.<br>
-                              <input type="checkbox" name="public[file_uploads]" value="100">User File Uploads.<br>
-                              <input type="checkbox" name="public[file_uploads]" value="50">Share pe twitter.<br>
-                              <input type="checkbox" name="public[file_uploads]" value="100">Alt tip de integrare.<br>
-                              <textarea name="other_types"></textarea>
+                              <input type="checkbox" name="integrations[facebook_login]" value="100">Logare cu facebook.<br>
+                              <input type="checkbox" name="integrations[google_login]" value="100">Logare cu google.<br>
+                              <input type="checkbox" name="integrations[page_like]" value="50">Like-uri pe pagini specifice.<br>
+                              <input type="checkbox" name="integrations[share_page]" value="50"> Share pe pagini specifice<br>
+                              <input type="checkbox" name="integrations[google_maps]" value="100">Integrare cu google maps.<br>
+                              <input type="checkbox" name="integrations[contact_form]" value="50">Contact Form.<br>
+                              <input type="checkbox" name="integrations[site_search]" value="100">Site Search.<br>
+                              <input type="checkbox" name="integrations[file_uploads]" value="100">User File Uploads.<br>
+                              <input type="checkbox" name="integrations[twiter_share]" value="50">Share pe twitter.<br>
+                              <input type="checkbox" name="integrations[other_integration]" value="100">Alt tip de integrare.<br>
+                              <textarea name="other_integration" rows="40"></textarea>
                           </p>
                       </div>
                   </div><!-- /.featured-item -->
               </div>
               <div class="row featured-item hover-outline brand-hover radius-4">
                   <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                  <h2> Tip grafica</h2>
+                  <h2>Tip grafica:</h2>
                   <div class="">
                       <div class="desc">
                           <p>
@@ -103,14 +91,14 @@
               </div>
             <div class="row featured-item hover-outline brand-hover radius-4">
                 <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2> Elemente grafice</h2>
+                <h2>Elemente grafice:</h2>
                 <div class="">
                           <div class="desc">
                               <p>
-                                  <input type="radio" name="graphics" value="100">Voi trimite grafica site-ului gata de utilizare(imagini, poze etc).<br>
-                                  <input type="radio" name="graphics" value="500">Am nevoie de grafica speciala creata pentru site-ul meu.<br>
-                                  <input type="radio" name="graphics" value="150">Am nevoie de galerii de poze/slideshow.<br>
-                                  <input type="radio" name="graphics" value="400">Doresc sa se integreze si editeze un catalaog de imagini pe care le detin..<br>
+                                  <input type="radio" name="graphic_elements" value="100">Voi trimite grafica site-ului gata de utilizare(imagini, poze etc).<br>
+                                  <input type="radio" name="graphic_elements" value="500">Am nevoie de grafica speciala creata pentru site-ul meu.<br>
+                                  <input type="radio" name="graphic_elements" value="150">Am nevoie de galerii de poze/slideshow.<br>
+                                  <input type="radio" name="graphic_elements" value="400">Doresc sa se integreze si editeze un catalaog de imagini pe care le detin..<br>
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
@@ -118,11 +106,11 @@
             </div>
             <div class="row featured-item hover-outline brand-hover radius-4">
                 <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2>Alte servicii</h2>
+                <h2>Alte servicii:</h2>
                 <div class="">
                           <div class="desc">
                               <p>
-                                  <input type="checkbox" name="admin_features[manage_users]" value="1000">Transfer(migrare) baze de date<br>
+                                  <input type="checkbox" name="other_services" value="1000">Transfer(migrare) baze de date<br>
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
@@ -130,7 +118,7 @@
             </div>
             <div class="row featured-item hover-outline brand-hover radius-4">
                 <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2>SEO Si Promovare Web</h2>
+                <h2>SEO Si Promovare Web:</h2>
                 <div class="">
                           <div class="desc">
                               <p>
@@ -145,13 +133,13 @@
             </div>
             <div class="row featured-item hover-outline brand-hover radius-4">
                 <div class="icon"><i class="material-icons colored brand-icon">&#xE0B7;</i></div>
-                <h2>SOCIAL</h2>
+                <h2>Social:</h2>
                 <div class="">
                           <div class="desc">
                               <p>
                                   <input type="checkbox" name="social[facebook]" value="50">Facebook Page<br>
-                                  <input type="checkbox" name="social[facebook]" value="50">Alt tip de integrare sociala:<br>
-                                  <textarea></textarea>
+                                  <input type="checkbox" name="social[other_social]" value="50">Alt tip de integrare sociala:<br>
+                                  <textarea name="other_social" rows="40"></textarea>
                               </p>
                           </div>
                       </div><!-- /.featured-item -->
