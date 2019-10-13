@@ -60,23 +60,23 @@
 
 
         <!-- jQuery -->
-        <script src="assets/js/jquery-2.1.3.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/materialize/js/materialize.min.js"></script>
-        <script src="assets/js/jquery.easing.min.js"></script>
-        <script src="assets/js/smoothscroll.min.js"></script>
-        <script src="assets/js/menuzord.js"></script>
-        <script src="assets/js/equalheight.js"></script>
-        <script src="assets/js/bootstrap-tabcollapse.min.js"></script>
-        <script src="assets/js/jquery.inview.min.js"></script>
-        <script src="assets/js/jquery.countTo.min.js"></script>
-        <script src="assets/js/imagesloaded.js"></script>
-        <script src="assets/js/jquery.shuffle.min.js"></script>
-        <script src="assets/js/jquery.stellar.min.js"></script>
-        <script src="assets/flexSlider/jquery.flexslider-min.js"></script>
-        <script src="assets/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/jquery.easypiechart.js"></script>
-        <script src="assets/js/scripts.js"></script>
+        <script src="<?php echo base_url()?>assets/js/jquery-2.1.3.min.js"></script>
+        <script src="<?php echo base_url()?>assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php echo base_url()?>assets/materialize/js/materialize.min.js"></script>
+        <script src="<?php echo base_url()?>assets/js/jquery.easing.min.js"></script>
+        <script src="<?php echo base_url()?>assets/js/smoothscroll.min.js"></script>
+        <script src="<?php echo base_url()?>assets/js/menuzord.js"></script>
+        <script src="<?php echo base_url()?>assets/js/equalheight.js"></script>
+        <script src="<?php echo base_url()?>assets/js/bootstrap-tabcollapse.min.js"></script>
+        <script src="<?php echo base_url()?>assets/js/jquery.inview.min.js"></script>
+        <script src="<?php echo base_url()?>assets/js/jquery.countTo.min.js"></script>
+        <script src="<?php echo base_url()?>assets/js/imagesloaded.js"></script>
+        <script src="<?php echo base_url()?>assets/js/jquery.shuffle.min.js"></script>
+        <script src="<?php echo base_url()?>assets/js/jquery.stellar.min.js"></script>
+        <script src="<?php echo base_url()?>assets/flexSlider/jquery.flexslider-min.js"></script>
+        <script src="<?php echo base_url()?>assets/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="<?php echo base_url()?>assets/js/jquery.easypiechart.js"></script>
+        <script src="<?php echo base_url()?>assets/js/scripts.js"></script>
     </body>
   
 </html>

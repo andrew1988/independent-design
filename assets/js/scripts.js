@@ -459,7 +459,6 @@ Version: 1.4
             var $this = $(this);
 
             $this.prevAll('.alert').remove();
-
             $.post( $action, $data, function( data ) {
 
                 if( data.response=='error' ){
@@ -476,6 +475,47 @@ Version: 1.4
 
 
          });
+
+        /* ======= Price calculator ======= */
+        $('#priceCalculatorForm').on('submit',function(e){
+            e.preventDefault();
+            var $action = $(this).prop('action');
+            var $data = $(this).serialize();
+            var $this = $(this);
+            $this.prevAll('.alert').remove();
+            $.post( $action, $data, function( data ) {
+                if( data.response=='error' ){
+                    $this.before( '<div class="alert danger-border"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <i class="fa fa-times-circle"></i> '+data.message+'</div>' );
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
+                }
+
+                if( data.response=='success' ){
+                    $this.before( '<div class="alert success-border"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><i class="fa fa-thumbs-o-up"></i> '+data.message+'</div>' );
+                    window.location.href = data.redirection_url;
+                }
+
+            }, "json");
+        });
+
+        $('#sugestionForm').on('submit',function(e){
+            e.preventDefault();
+            var $action = $(this).prop('action');
+            var $data = $(this).serialize();
+            var $this = $(this);
+            $this.prevAll('.alert').remove();
+            $.post( $action, $data, function( data ) {
+                if( data.response=='error' ){
+                    $this.before( '<div class="alert danger-border"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <i class="fa fa-times-circle"></i> '+data.message+'</div>' );
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
+                }
+
+                if( data.response=='success' ){
+                    $this.before( '<div class="alert success-border"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><i class="fa fa-thumbs-o-up"></i> '+data.message+'</div>' );
+                    $( "#sugestions_and_reclamations" ).remove();
+                }
+
+            }, "json");
+        });
 
 
         /* ======= Stellar for background scrolling ======= */
@@ -595,33 +635,30 @@ Version: 1.4
 
         /* ======= jquery price changer depending on previous selection ======= */
         $('#type_1').click(function(){
-            alert("ajunge aici type 1");
-            $('#personal').attr('value', '10');
-            $('#ecommerce').attr('value', '20');
-            $('#portal_web').attr('value', '30');
-            $('#catalog_site').attr('value', '40');
-            $('#media_site').attr('value', '50');
-            $('#blog').attr('value', '60');
+            $('#personal').attr('value', '10 prezentare_perosnal');
+            $('#ecommerce').attr('value', '20 ecomert');
+            $('#portal_web').attr('value', '30 portal_web_generalist');
+            $('#catalog_site').attr('value', '40 site_tip_catalog_portofoliu');
+            $('#media_site').attr('value', '50 site_stiri_media');
+            $('#blog').attr('value', '60 blog');
         });
 
         $('#type_2').click(function(){
-            alert("ajunge aici type 2");
-            $('#personal').attr('value', '100');
-            $('#ecommerce').attr('value', '200');
-            $('#portal_web').attr('value', '300');
-            $('#catalog_site').attr('value', '400');
-            $('#media_site').attr('value', '500');
-            $('#blog').attr('value', '600');
+            $('#personal').attr('value', '100 prezentare_perosnal');
+            $('#ecommerce').attr('value', '200 ecomert');
+            $('#portal_web').attr('value', '300 portal_web_generalist');
+            $('#catalog_site').attr('value', '400 site_tip_catalog_portofoliu');
+            $('#media_site').attr('value', '500 site_stiri_media');
+            $('#blog').attr('value', '600 blog');
         });
 
         $('#type_3').click(function(){
-            alert("ajunge aici");
-            $('#personal').attr('value', '1000');
-            $('#ecommerce').attr('value', '2000');
-            $('#portal_web').attr('value', '3000');
-            $('#catalog_site').attr('value', '4000');
-            $('#media_site').attr('value', '5000');
-            $('#blog').attr('value', '6000');
+            $('#personal').attr('value', '1000 prezentare_perosnal');
+            $('#ecommerce').attr('value', '2000 ecomert');
+            $('#portal_web').attr('value', '3000 portal_web_generalist');
+            $('#catalog_site').attr('value', '4000 site_tip_catalog_portofoliu');
+            $('#media_site').attr('value', '5000 site_stiri_media');
+            $('#blog').attr('value', '6000 blog');
         });
 
     });

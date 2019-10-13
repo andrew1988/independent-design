@@ -10,32 +10,32 @@
 
         <title>Independent Design</title>
         <!--  favicon -->
-        <link rel="shortcut icon" href="assets/img/ico/favicon.png">
+        <link rel="shortcut icon" href="<?php echo base_url()?>assets/img/ico/favicon.png">
         <!--  apple-touch-icon -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/img/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url()?>assets/img/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url()?>assets/img/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url()?>assets/img/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="<?php echo base_url()?>assets/img/ico/apple-touch-icon-57-precomposed.png">
 
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900' rel='stylesheet' type='text/css'>
         <!-- Material Icons CSS -->
-        <link href="assets/fonts/iconfont/material-icons.css" rel="stylesheet">
+        <link href="<?php echo base_url()?>assets/fonts/iconfont/material-icons.css" rel="stylesheet">
         <!-- FontAwesome CSS -->
-        <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="<?php echo base_url()?>assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <!-- magnific-popup -->
-        <link href="assets/magnific-popup/magnific-popup.css" rel="stylesheet">
+        <link href="<?php echo base_url()?>assets/magnific-popup/magnific-popup.css" rel="stylesheet">
         <!-- flexslider -->
-        <link href="assets/flexSlider/flexslider.css" rel="stylesheet">
+        <link href="<?php echo base_url()?>assets/flexSlider/flexslider.css" rel="stylesheet">
         <!-- materialize -->
-        <link href="assets/materialize/css/materialize.min.css" rel="stylesheet">
+        <link href="<?php echo base_url()?>assets/materialize/css/materialize.min.css" rel="stylesheet">
         <!-- Bootstrap -->
-        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo base_url()?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- shortcodes -->
-        <link href="assets/css/shortcodes/shortcodes.css" rel="stylesheet">
+        <link href="<?php echo base_url()?>assets/css/shortcodes/shortcodes.css" rel="stylesheet">
         <!-- Main Style CSS -->
-        <link href="style.css" rel="stylesheet">
+        <link href="<?php echo base_url()?>style.css" rel="stylesheet">
         <!-- Corporate CSS -->
-        <link href="assets/css/skins/corporate.css" rel="stylesheet">
+        <link href="<?php echo base_url()?>assets/css/skins/corporate.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
